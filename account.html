@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <h1 class="text-3xl mt-12 text-center font-bold">Amr Nanir Teha</h1>
+
+    <section class="text-center font-bold mb-40">
+      <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+        <div class="bg-green-300 rounded-xl p-8">
+          <h2 class="text-3xl">deposit</h2>
+          <h1 class="w-9/12 gap-4 mx-auto text-5xl">$ <span id="deposit-total">00</span></h1>
+        </div>
+        <div class="bg-pink-300 rounded-xl p-8">
+          <h2 class="text-3xl">withdrow</h2>
+          <h1 class="w-9/12 gap-4 mx-auto text-5xl">$<span id="withdrow-total">00</span></h1>
+        </div>
+        <div class="bg-blue-300 rounded-xl p-8">
+          <h2 class="text-3xl">balance</h2>
+          <h1 class="w-9/12 gap-4 mx-auto text-5xl">$ <span id="balance-total">1240</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center font-bold mb-12">
+      <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+        <div class="bg-purple-300 p-12 rounded-xl">
+          <h1 class="text-3xl">please deposit</h1>
+          <input id="deposit-field" class="my-5 rounded-md p-2 w-8/12" type="text" placeholder="$ amount you want to deposit" />
+          <h2 class="text-5xl">$00</h2>
+          <button id="btn-deposit" class="bg-blue-600 text-white p-3 rounded-xl mt-5 hover:bg-blue-900">deposit</button>
+        </div>
+        <div class="bg-blue-300 p-12 rounded-xl">
+          <h1 class="text-3xl">please withdrow</h1>
+          <input id="withdrow-field" class="my-5 rounded-md p-2 w-8/12" type="text" placeholder="$ amount you want to withdrow" />
+          <h2 class="text-5xl">$00</h2>
+          <button id="btn-widthdrow" class="bg-blue-600 text-white p-3 rounded-xl mt-5 hover:bg-blue-900">withdrow</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./dasbord.js"></script>
+    <script src="./withdrow.js"></script>
+  </body>
+</html>
